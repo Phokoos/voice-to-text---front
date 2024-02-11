@@ -1,0 +1,30 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    width: 100%;
+    max-width: 500px;
+    padding: 20px 40px;
+
+    @media screen and (min-width: 760px) {
+        width: 500px;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+}
+
+.btn{
+    margin-top: 20px;
+}

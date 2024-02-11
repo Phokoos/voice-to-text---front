@@ -43,7 +43,7 @@ class LoginForm extends Component {
     }
 
     const { login, email, password, agreed, gender, age } = this.state;
-    // console.log(`Login: ${login}, Email: ${email}, Password: ${password}, Agreed: ${agreed}, Gender: ${gender}, Age: ${age}`);
+    // console.log(`Login-Old: ${login}, Email: ${email}, Password: ${password}, Agreed: ${agreed}, Gender: ${gender}, Age: ${age}`);
 
     // this.props.onSubmit({ ...this.state });
     this.reset();

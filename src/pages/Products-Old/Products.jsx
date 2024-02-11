@@ -1,6 +1,7 @@
 import css from "./Products.module.css";
 import { useSearchParams } from "react-router-dom";
 import { useMemo } from "react";
+import AudioPlayer from "../../components/Audio/AudioPlayer";
 
 const Products = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -13,10 +14,7 @@ const Products = () => {
 
   return (
     <>
-      <p>Name: {name}</p>
-      <input onChange={(e) => setSearchParams({ name: e.target.value })} />
-      <p>Color: {color}</p>
-      <p>Max Price: {maxPrice}</p>
+      <AudioPlayer />
     </>
   );
 };
