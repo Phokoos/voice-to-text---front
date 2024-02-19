@@ -15,14 +15,24 @@
   src: url("./assets/fonts/roboto/Robotobold.woff") format('woff');
 }
 
+/* 1 - #4C85BB */
+/* 2 - #537391 - back - Done */
+/* 3 - #3791E6 - more contrast - Done  */
+
+/* 4 - #4B5966 - second dark */
+
+/* 5 - #35383C - most dark  - Done */
+/* 6 - #001D38 - accent/primary - Done */
+
 :root {
-  --primary-color: #323232;
-  --secondary-color: #6a5d4d;
-  --third-color: #DDD0C8;
+  --primary-color: #001D38;
+  --secondary-color: #3791E6;
 
+  --third-color: #4C85BB;
+  --dark-text: #35383C;
 
-  --primary-background-color: #DDD0C8;
-  --primary-btn-background-color: #6a5d4d;
+  --primary-background-color: #84a2bd;
+  --primary-btn-background-color: #35383C;
 }
 
 body {

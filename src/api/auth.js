@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "login - api";
+axios.defaults.baseURL = "www.dsns.sesu.ua";
 export const fetchAuth = async (data) => {
   const { email, password } = data;
 
