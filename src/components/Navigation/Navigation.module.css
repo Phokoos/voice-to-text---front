@@ -42,6 +42,8 @@
 
 .active{
     color: var(--primary-color);
+    background-color: var(--third-color);
+    border-color: var(--third-color);
 }
 
 .btn{

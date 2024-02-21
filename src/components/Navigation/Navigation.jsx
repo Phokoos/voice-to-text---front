@@ -31,6 +31,9 @@ const NavigationTop = () => {
           <CustomLink to="/" className="item" activeClassName="active">
             Home
           </CustomLink>
+          <CustomLink to="/history" className="item" activeClassName="active">
+            History
+          </CustomLink>
           <CustomLink to="/second" className="item" activeClassName="active">
             Second page
           </CustomLink>

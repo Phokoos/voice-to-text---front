@@ -47,6 +47,7 @@
     margin-top: 10px;
 }
 
+textarea,
 .input{
     padding: 10px;
     display: block;
@@ -59,14 +60,14 @@
     transition: box-shadow 150ms linear;
 }
 
-
+textarea,
 input:placeholder-shown{
     color: var(--primary-color);
 }
+textarea,
 input::placeholder{
     color: var(--primary-color);
 }
-
 
 .input:hover{
     box-shadow: 0px 0px 8px -2px rgba(0,0,0,1);
@@ -83,3 +84,85 @@ input::placeholder{
     -moz-box-shadow: 0px 0px 8px -2px rgba(0,0,0,1);
 }
 /*FORM END*/
+
+
+/*Player start*/
+.rhap_container{
+    background-color: var(--primary-btn-background-color) !important;
+    border-radius: 20px;
+}
+
+.rhap_time{
+    color: var(--third-color) !important;
+}
+
+.rhap_button-clear svg{
+    color: var(--third-color) !important;
+}
+
+.rhap_download-progress{
+    background-color: var(--primary-background-color) !important;
+}
+
+.rhap_progress-filled{
+    background-color: var(--third-color) !important;
+}
+
+.rhap_controls-section{
+    margin: 0 !important;
+}
+
+.rhap_volume-indicator,
+.rhap_progress-indicator{
+    background-color: var(--secondary-color) !important;
+}
+/*Player start*/
+
+
+/*Table styles*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+    /*border-collapse: separate; !* важливо для застосування border-radius *!*/
+    border-spacing: 0; /* видаляє відступи між комірками */
+    /*border: 2px solid black;*/
+    border-radius: 10px; /* задає радіус кордонів */
+    overflow: hidden;
+    border-bottom-right-radius: 0px; /* радіус лівого верхнього кута для першої комірки в ряду */
+    border-bottom-left-radius: 0px
+}
+
+thead{
+    background-color: var(--primary-btn-background-color);
+}
+
+th, td {
+    border: 1px solid var(--secondary-color);
+    text-align: left;
+}
+
+th:first-child {
+    border-top-left-radius: 9px;}
+
+th:last-child {
+    border-top-right-radius: 9px;}
+
+th{
+    padding: 5px;
+
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+td:first-child{
+    padding: 5px;
+}
+td button {
+    width: 100%;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+}
+
+/*End of Table styles*/
+

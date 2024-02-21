@@ -1,0 +1,37 @@
+.block{
+    padding: 20px 20px;
+    margin: 10px 30px;
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+}
+
+.title_id{
+    color: var(--secondary-color);
+    margin-right: auto;
+}
+
+.information{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.data{
+
+}
+
+.table_text{
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    line-height: normal;
+
+    font-size: 14px;
+}
+
+.time_btn{
+    font-size: 14px;
+}
