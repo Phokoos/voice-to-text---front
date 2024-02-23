@@ -1,5 +1,5 @@
 import "./App.css";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import NotFound from "./pages/NotFound/NotFound";
 import NavigationTop from "./components/Navigation/Navigation";
@@ -11,10 +11,36 @@ import AuthContext from "./components/Auth/AuthContext";
 import Home from "./pages/Home/Home";
 import History from "./pages/History/History";
 import EditFile from "./pages/EditFile/EditFile";
+import FileContext from "./components/File/FileContext";
 
 // const Products = lazy(() => import("./pages/Products-Old/Products"));
 
 const AppShow = () => {
+  const { isOnline, setIsOnline } = useContext(FileContext);
+
+  useEffect(() => {
+    function checkOnline() {
+      fetch("https://ipv4.icanhazip.com")
+        .then((response) => {
+          if (response.ok) {
+            // console.log("Ви онлайн");
+            setIsOnline(true);
+          } else {
+            setIsOnline(false);
+            // console.log("Ви не в мережі. Код статусу: " + response.status);
+          }
+        })
+        .catch((error) => {
+          setIsOnline(false);
+          // console.log("Неможливо зєднатися з Інтернетом");
+        });
+      setTimeout(() => {
+        checkOnline();
+      }, 2000);
+    }
+    checkOnline();
+  }, []);
+
   return (
     <Suspense
       fallback={

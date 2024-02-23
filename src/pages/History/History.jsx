@@ -1,9 +1,8 @@
-import css from "./History.module.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { fetchAllTranscriptions } from "../../api/model";
 import File from "../../components/File/File";
-import { Audio } from "react-loader-spinner";
 import Loader from "../../components/Loader/Loader";
+import Modal from "../../components/ReportModal/ReportModal";
 
 const History = () => {
   const [loader, setLoader] = useState();
@@ -13,6 +12,7 @@ const History = () => {
     const fetchMyAPI = async () => {
       setLoader(true);
       let fetchedData = await fetchAllTranscriptions();
+      // console.log(fetchedData);
       setData(fetchedData);
       setLoader(false);
     };
@@ -36,6 +36,7 @@ const History = () => {
                     id={element.id}
                     filename={element.filename}
                     transcript={element.transcript}
+                    model_name={element.model_name}
                     deleteShow={true}
                   />
                 </li>

@@ -33,6 +33,10 @@
 
   --primary-background-color: #dae4ef;
   --primary-btn-background-color: #35383C;
+
+  --default-success: #6dc46d;
+  --default-normal: #ffae00;
+  --default-dangerous: #ff4545;
 }
 
 body {
@@ -40,6 +44,7 @@ body {
   margin: 0;
 
   background-color: var(--primary-background-color);
+
 }
 
 h1,

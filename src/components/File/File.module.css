@@ -6,16 +6,25 @@
     border-radius: 20px;
 }
 
-.title_id{
-    color: var(--secondary-color);
+.title_name{
     margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    color: var(--secondary-color);
 }
 
 .information{
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
+
+    font-size: 18px;
+    color: var(--default-success);
 }
 
 .data{
@@ -34,4 +43,25 @@
 
 .time_btn{
     font-size: 14px;
+}
+
+.status_block{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 3px;
+}
+
+.normal{
+    color: var(--default-success);
+}
+
+.warning{
+    color: var(--default-normal);
+}
+
+.dangerous{
+    color: var(--default-dangerous);
 }

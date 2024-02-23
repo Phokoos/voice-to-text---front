@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--primary-btn-background-color);
 
     /*border: 1px solid tomato;*/
@@ -50,4 +51,23 @@
     position: absolute;
     /*top: 10;*/
     right: 10px;
+}
+
+.status{
+    height: 20px;
+    width: 20px;
+
+    border-radius: 100%;
+}
+
+.status_container{
+    position: absolute;
+    right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    font-size: 18px;
 }
